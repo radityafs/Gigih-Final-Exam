@@ -15,8 +15,9 @@ const commentSchema = new mongoose.Schema(
       required: true,
     },
     liveVideoId: {
-      type: String,
+      type: mongoose.Schema.Types.ObjectId,
       required: true,
+      ref: "LiveVideo",
     },
   },
   { timestamps: true }

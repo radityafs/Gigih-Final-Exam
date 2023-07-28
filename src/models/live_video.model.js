@@ -1,5 +1,5 @@
-import { ObjectId } from "mongodb";
 import db from "../database/mongo.database.js";
+import { ObjectId } from "mongodb";
 
 const getLiveVideos = async () =>
   await db.collection("livevideos").find().toArray();
